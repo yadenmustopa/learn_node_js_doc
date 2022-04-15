@@ -5,5 +5,5 @@ try {
 
     console.log({ test });
 }catch( err ){
-    console.log({ err });
+    // assert.strictEqual( err.nam)
 }
