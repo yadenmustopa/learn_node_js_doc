@@ -23,6 +23,20 @@ function func(){
     console.log('test');
 }
 
-const callsfunc = tracker.calls( func );
 
-console.log( { callsfunc });
+function foo(){
+    console.log('foo');
+}
+
+const callsfunc = tracker.calls( func, 2 );
+
+let report = tracker.report();
+
+console.log({ report });
+// const callsfunc = tracker.calls( func );
+
+// console.log( { callsfunc });
+
+
+
+
